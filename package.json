@@ -180,6 +180,7 @@
     "posttest-cov": "if [ -n \"$CODECLIMATE_REPO_TOKEN\" ]; then codeclimate-test-reporter < coverage/lcov.info; fi",
     "clean": "rimraf ./coverage",
     "fields-explorer": "node ./fields/explorer/server.js",
-    "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit"
+    "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
+    "e2etest": "testcafe puppeteer:no_sandbox test/*.js --reporter html"
   }
 }
