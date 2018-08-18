@@ -183,5 +183,6 @@
     "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
     "e2etest": "testcafe puppeteer:no_sandbox test/*.js --reporter html",
     "runner": "node server/server.js",
+    "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' // your website URL//",
   }
 }
