@@ -181,6 +181,7 @@
     "clean": "rimraf ./coverage",
     "fields-explorer": "node ./fields/explorer/server.js",
     "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
-    "e2etest": "testcafe puppeteer:no_sandbox test/*.js --reporter html"
+    "e2etest": "testcafe puppeteer:no_sandbox test/*.js --reporter html",
+    "runner": "node server/server.js",
   }
 }
